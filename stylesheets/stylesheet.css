@@ -305,5 +305,5 @@ div.desc {
 .btn2:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(67, 151, 142);
   border-color: rgba(255, 255, 255, 0.3); }
