@@ -2,15 +2,75 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    
+
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    
+
     <title>Nikolaos Papageorgiou Project Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+    <!-- TAB CSS-->
+    <style>
+    ul.tab {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+		border-radius: 0.3rem;
+	    background-color: #f1f1f1;
+	    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#155799+0,159957+50,159957+50,000000+100&1+0,0+95 */
+		background: -moz-linear-gradient(-45deg,  rgba(21,87,153,1) 0%, rgba(21,153,87,0.47) 50%, rgba(2,15,9,0) 95%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg,  rgba(21,87,153,1) 0%,rgba(21,153,87,0.47) 50%,rgba(2,15,9,0) 95%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg,  rgba(21,87,153,1) 0%,rgba(21,153,87,0.47) 50%,rgba(2,15,9,0) 95%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#155799', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	}
+
+	/* Float the list items side by side */
+	ul.tab li {float: left;}
+
+	/* Style the links inside the list items */
+	ul.tab li a {
+	    display: inline-block;
+	    color: white;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	    transition: 0.3s;
+	    font-size: 17px;
+	}
+
+	/* Change background color of links on hover */
+	ul.tab li a:hover {
+	    background-color: rgba(255, 255, 255, 0.08);
+	}
+
+	/* Create an active/current tablink class */
+	ul.tab li a:focus, .active {
+	    background-color: rgba(255, 255, 255, 0.2)
+	}
+
+	/* Style the tab content */
+	.tabcontent {
+	    display: none;
+	    padding: 6px 12px;
+	    -webkit-animation: fadeEffect 1s;
+	    animation: fadeEffect 1s;
+	}
+
+	@-webkit-keyframes fadeEffect {
+	    from {opacity: 0;}
+	    to {opacity: 1;}
+	}
+
+	@keyframes fadeEffect {
+	    from {opacity: 0;}
+	    to {opacity: 1;}
+	}
+</style>
   </head>
   <body>
     <section class="page-header">
@@ -23,6 +83,80 @@
     </section>
 
     <section class="main-content">
+    <!--TABS-->
+
+	<ul class="tab">
+	  <li><a id="defaultTab" href="#" class="tablinks" onclick="openTab(event, 'Software')">Software</a></li>
+	  <li><a href="#" class="tablinks" onclick="openTab(event, 'Games')">Games</a></li>
+	</ul>
+
+
+
+
+
+<!--SOFTWARE TAB-->
+<div id="Software" class="tabcontent">
+
+<!-- NEW TAB-->
+      <h3>
+<a id="multichat" class="anchor" href="#multichat" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Multi User Chat</h3>
+
+
+<p>A multi user chat system developed in JAVA. The application contains both a server and a client mode. Once the server is established, users can log in, create, manage and join chat groups and start private real time one-to-one chats that allow file exchange.
+</p>
+<p>
+Keywords:
+	<span style="font-style:italic;">Multithreading, concurrency, networking</span>
+</p>
+
+<a href="https://drive.google.com/open?id=0BxjuHnwIaOCgS2JkR2VTQXA5SEk" class="btn btn2" target="_blank">Download</a>
+
+<hr>
+<!-- END OF TAB-->
+
+<!-- NEW TAB-->
+      <h3>
+<a id="cryptotool" class="anchor" href="#cryptotool" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Crypto Tool</h3>
+
+
+<p>A JAVA tool that implements six different ciphers (Simple Substitution, Power Substitution, Vegenere Cipher, Single Transposition, Double Transposition, One Time Pad), and allows the users to experiment with them and see how they encode input.
+</p>
+<p>
+Keywords:
+	<span style="font-style:italic;">Security, Cryptography, Ciphers</span>
+</p>
+
+<a href="https://drive.google.com/open?id=0BxjuHnwIaOCgZ1dDT2NMOVlhcVE" class="btn btn2" target="_blank">Download</a>
+
+<hr>
+<!-- END OF TAB-->
+
+<!-- NEW TAB-->
+      <h3>
+<a id="heroku" class="anchor" href="#heroku" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>RESTful Database Management App</h3>
+
+
+<p>A simple application developed with Java EE that resides on Heroku and allows users to manage an online database with RESTful communication.
+</p>
+<p>
+Keywords:
+	<span style="font-style:italic;">REST, Database, Java EE</span>
+</p>
+
+<a href="https://powerful-ravine-26559.herokuapp.com/" class="btn btn2" target="_blank">Link</a>
+
+<hr>
+<!-- END OF TAB-->
+
+</div>
+
+
+
+
+
+<!-- GAMES TAB-->
+<div id="Games" class="tabcontent">
+
       <h3>
 <a id="lyte" class="anchor" href="#lyte" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lyte's Odyssey</h3>
 
@@ -51,10 +185,10 @@
 </div>
 <div class="clearfix"></div>
 
-<p>Lyte's Odyssey is a educational video game, developed in Unity Engine as part of my bachelor's degree dissertation. 
+<p>Lyte's Odyssey is a educational video game, developed in Unity Engine as part of my bachelor's degree dissertation.
 The game attempts to utilize well established learning theories to educate children in the concept of abstraction, problem analysis and solving.
 While many of the mechanics are common in video games, in this particular project they are based on a solid body of research. The player controls a bunny that is tasked with saving the spirit tree, by traversing the land and reaching his goal.
- In his path he has to solve various puzzles, by utilizing both in-game and real life skill he acquires during the game. 
+ In his path he has to solve various puzzles, by utilizing both in-game and real life skill he acquires during the game.
 </p>
 <ul>
   <li>
@@ -280,11 +414,14 @@ While many of the mechanics are common in video games, in this particular projec
 
 
 <hr>
-
  <!-- FOOT NOTE-->
 <h3>
 <a id="statement" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Footnote</h3>
 <p>All art assets were created by myself, with more than 95% of it being original art and the remaining heavily edited existing images. While i am not a professional artist, i feel it is important to highlight this fact, because it suggests creativity, that i understand thematic cohesion and art direction as well as being able to communicate easily with the artists in a team.</p>
+
+
+
+</div>
 
 
       <footer class="site-footer">
@@ -295,6 +432,39 @@ While many of the mechanics are common in video games, in this particular projec
 
     </section>
 
-  
+
+
+
+<script>
+function openTab(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+
+window.onload = function() {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById("Software").style.display = "block";
+    document.getElementById("defaultTab").className += " active";
+};
+</script>
+
   </body>
 </html>
